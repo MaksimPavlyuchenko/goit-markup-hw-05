@@ -9,7 +9,7 @@
     --additional-white-color: #F5F5F5;
      }
 *:hover{
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }     
 /* BODY */
 body{
@@ -196,6 +196,8 @@ body{
 
     min-width: 528px;
     min-height: 581px;
+    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--primery-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px
@@ -375,7 +377,7 @@ body{
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;}
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;}
 .client-icon{
         width: 106px;
         height: 60px;
@@ -536,22 +538,11 @@ body{
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 2;
    
     padding: 63px 24px;
     font-size: 18px;
     line-height: 1.556;
     letter-spacing: 0.03em;
-    color: #FFFFFF;}
-
-.backside{
-    position: absolute;
-    
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1;
-    
-    width: 100%;
-    height: 100%;
+    color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);}
+
